@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Jquery Task</title>
+  </head>
+
+  <body>
+    <h1>First Task in Jquery</h1>
+    <img
+      src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxjZm_aIrJA.fLn8hAuDwzEAf5PwyhOe31MCCTwgKvLeSQIW2txbDssnD37rUf6FhncCuV6K8wO_ZUyMxyCMi9kU-&format=source"
+      alt="image is not load"
+      id="First_image"
+    />
+    <button id="imagefade" onclick="imagefade()">Click me</button>
+  </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+    integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+
+  <script>
+  
+    $("#First_image").css("border-radius", "10px").height(200).width(200);
+    function imagefade() {
+      // $('#First_image').hide(3000);
+      $("#First_image").fadeOut(2000).fadeIn(2000);
+    }
+ 
+  </script>
+</html>

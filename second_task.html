@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>second Jquery Task</title>
+  </head>
+
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background: #7ede89;
+      margin-top: 10px;
+      border-style: solid;
+      border-color: #40ce7b;
+    }
+  </style>
+
+  <body>
+    <h1>Second Task in Jquery</h1>
+    <button type="button" id="Start_Ani" style="margin-top: 12px">
+      Start Animation
+    </button>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div id='mydiv' class="class1"></div>
+    <div id='mydiv' class="class2"></div>
+  </body>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+    integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" ></script>
+
+<script>
+    $("document").ready(function () {
+      // addclass___________
+      // $( "div" ).addClass( "box" );
+      $("#Start_Ani").click(function () {
+        $(".box").animate({
+          width: "300px",
+          height: "300px",
+          marginLeft: "150px",
+          borderWidth: "10px",
+          opacity: 0.5,
+        });
+      });
+      // attribute___________
+    let check_attr=  $('#Start_Ani').attr('type')
+    // console.log(check_attr);
+    // alert(check_attr)
+    // hasclass___________
+    // console.log( $( "div" ).hasClass( "box" ));
+    // toggleclass______________
+  
+
+console.log($('#mydiv').toggleClass(' class2 class1'));
+
+
+
+    });
+</script>
+</html>

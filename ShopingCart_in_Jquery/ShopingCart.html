@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First ShopingCart</title>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="ShopingCart.css" />
+  </head>
+  <body>
+    <h1>Shopping Cart</h1>
+    <div>
+      <div class="container">
+        <h3 class="heading">Products</h3>
+        <div class="result"></div>
+      </div>
+      <div class="cart">
+        <div class="cart-header">
+          <h3>CART</h3>
+          <p class="noOfItems">0 items</p>
+        </div>
+        <hr size="1px" />
+        <div class="cart-items"></div>
+        <hr size="1px" />
+        <div class="cart-footer cart-header">
+          <h4>Total</h4>
+          <p class="total">$0</p>
+        </div>
+        <button onclick="myFunction()" class="buy-btn">
+          <i class="fa-sharp fa-solid fa-cart-plus" style="margin: 6px"></i>
+          PROCEED TO BUY
+        </button>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+    integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="ShopingCart.js">
+    // $(document).ready(function(){
+    //       if (jQuery) {
+    //         // jQuery is loaded
+    //         alert("work!");
+    //       } else {
+    //         // jQuery is not loaded
+    //         alert("Doesn't Work");
+    //       }
+    //    });
+  </script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Keyboard Sounds and Animations</title>
+  <link rel="stylesheet" href="AudioPlayer.css" />
+</head>
+
+<body>
+  <!-- --- result screen-- -->
+
+  <input type="text" id="result" class="nowplaying" />
+
+  <!-- --- parent div or main din-- -->
+  <div class="keys">
+    <!-- -- This Div is Used for a key--- -->
+    <div>
+      <span>
+        <input type="button" value="a" onclick="dis('a')" class="key" id="akey" onkeydown="myFunction(event)" /></span>
+      <audio data-key="65" src="http://carolinegabriel.com/demo/js-keyboard/sounds/040.wav"></audio>
+    </div>
+    <!-- -- This Div is Used for b key--- -->
+    <div>
+      <span>
+        <input type="button" value="b" onclick="dis('b')" class="key" id="bkey" onkeydown="myFunction(event)" /></span>
+      <audio data-key="66" src="http://carolinegabriel.com/demo/js-keyboard/sounds/042.wav"></audio>
+    </div>
+    <!-- -- This Div is Used for c key--- -->
+    <div id="ckey">
+      <span><input type="button" value="c" onclick="dis('c')" class="key" onkeydown="myFunction(event)" /></span>
+      <audio data-key="67" src="http://carolinegabriel.com/demo/js-keyboard/sounds/044.wav"></audio>
+    </div>
+    <!-- -- This Div is Used for d key--- -->
+    <div id="dkey">
+      <span>
+        <input type="button" value="d" onclick="dis('d')" class="key" onkeydown="myFunction(event)" /></span>
+      <audio data-key="68" src="http://carolinegabriel.com/demo/js-keyboard/sounds/054.wav"></audio>
+    </div>
+    <!-- -- This Div is Used for e key--- -->
+    <div id="ekey">
+      <span>
+        <input type="button" value="e" onclick="dis('e')" class="key" onkeydown="myFunction(event)" /></span>
+      <audio data-key="69" src="http://carolinegabriel.com/demo/js-keyboard/sounds/043.wav"></audio>
+    </div>
+    <!-- -- This Div is Used for f key--- -->
+    <div id="fkey">
+      <span>
+        <input type="button" value="f" onclick="dis('f')" class="key" onkeydown="myFunction(event)" /></span>
+      <audio data-key="70" src="http://carolinegabriel.com/demo/js-keyboard/sounds/056.wav"></audio>
+    </div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="AudioPlayer.js"></script>
+
+</html>
